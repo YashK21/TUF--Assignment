@@ -25,8 +25,7 @@ const Form = () => {
         stdin: '',
         sourceCode: ''
             })
-            // navigate("/display");
-             // Navigate to the display page after submission
+            navigate("/display");
         } catch (error) {
             console.error('Error submitting form:', error);
             alert('Error submitting form. Please try again later.');
