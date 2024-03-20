@@ -28,6 +28,7 @@ connection.connect((err) => {
 app.post("/submit", (req, res) => {
   const { username, language, stdin, sourceCode } = req.body;
   const timestamp = new Date();
+  //use type as time for timestamp in DB
   console.log(timestamp);
 
   const query = `INSERT INTO submissions (username, language, stdin, sourceCode, timestamp)
