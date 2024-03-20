@@ -1,5 +1,3 @@
-
-import './App.css'
 import Form from './comp/Form'
 import Display from './comp/Display'
 import Home from "./comp/Home"
