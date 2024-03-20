@@ -29,6 +29,7 @@ app.post("/submit", (req, res) => {
   const { username, language, stdin, sourceCode } = req.body;
   const timestamp = new Date();
   //use type as time for timestamp in DB
+  //use Xamp for using it on localhost
   console.log(timestamp);
 
   const query = `INSERT INTO submissions (username, language, stdin, sourceCode, timestamp)
