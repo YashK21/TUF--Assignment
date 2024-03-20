@@ -28,6 +28,7 @@ const Form = () => {
             navigate("/display");
         } catch (error) {
             console.error('Error submitting form:', error);
+            alert("Server not connected please connect!")
             alert('Error submitting form. Please try again later.');
         }
     };
